@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "lint:html": "htmlhint **/*.html",
-    "lint:js": "standard '**/*.js'",
+    "lint:js": "standard 'server.js'",
     "lint": "run-s lint:*",
     "lint:css": "stylelint 'public/css/style.css'"
   },
@@ -14,6 +14,7 @@
   "devDependencies": {
     "htmlhint": "^0.9.13",
     "stylelint": "^7.10.1",
+    "npm-run-all": "^4.0.2",
     "stylelint-config-standard": "^16.0.0"
   },
   "stylelint": {

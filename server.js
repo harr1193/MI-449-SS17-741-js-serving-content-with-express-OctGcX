@@ -1,3 +1,4 @@
+
 var express = require('express')
 var app = express()
 var port = process.env.PORT || 8080
@@ -21,7 +22,8 @@ app.get('/', function (request, response) {
 pages.forEach(function (page) {
   app.get(page.url, function (request, response) {
     response.render('pages/teams.ejs', {
-      page: page
+      page: page,
+      pages: pages
     })
   })
 })

@@ -1,5 +1,8 @@
-<header>
-  <div id="nav">
+<div>
+  <a href="/" id="home-link">Home</a>
+</div>
+<div>
+  <% pages.forEach(function (page) { %>
     <a href="<%= page.url %>"><%= page.name %></a>
-  </div>
-</header>
+  <% }) %>
+</div>
