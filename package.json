@@ -1,0 +1,22 @@
+{
+  "name": "MI-449-SS17-740-js-serving-content-with-express-OctGcX",
+  "version": "1.0.0",
+  "scripts": {
+    "lint:html": "htmlhint **/*.html",
+    "lint:js": "standard '**/*.js'",
+    "lint": "run-s lint:*",
+    "lint:css": "stylelint 'public/css/style.css'"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "htmlhint": "^0.9.13",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  }
+}

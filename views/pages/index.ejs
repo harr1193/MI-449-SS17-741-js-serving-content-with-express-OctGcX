@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+  <title>Detroit Sports</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<h1>Detroit Sports</h1>
+<div>
+  <% pages.forEach(function (page) { %>
+    <a href="<%= page.url %>"><%= page.name %></a>
+  <% }) %>
+</div>
+</html>
